@@ -74,18 +74,63 @@ import 'package:flutter/material.dart';
   //mhs2.perkenalkanDiri(); // Output: Halo, nama saya Ani dan kampus saya di Universitas Harapan Bangsa.
 // }
 
-class BasicTextWidget extends StatelessWidget {
-  const BasicTextWidget({super.key});
+//class BasicTextWidget extends StatelessWidget {
+  // const BasicTextWidget({super.key});
+
+  // @override
+  // Widget build(BuildContext context) {
+    // return const Text(
+      //'Hello Flutter',
+      //style: TextStyle(
+        //fontSize: 24,
+        //color: Colors.blue,
+      //),
+    //);
+  //}
+//}  
+
+class FontTextWidget extends StatelessWidget {
+  const FontTextWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'Hello Flutter',
-      style: TextStyle(
-        fontSize: 24,
-        color: Colors.blue,
-      ),
+    return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Normal',
+          style: TextStyle(
+            fontSize: 20,
+          ),
+        ),
+
+        Text(
+          'Bold',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+
+        Text(
+          'Semi Bold',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+
+        Text(
+          'Italic',
+          style: TextStyle(
+            fontSize: 20,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+      ],
     );
   }
-}  
+}
+
+
 
