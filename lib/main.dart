@@ -89,8 +89,51 @@ import 'package:flutter/material.dart';
   //}
 //}  
 
-class FontTextWidget extends StatelessWidget {
-  const FontTextWidget({super.key});
+//class FontTextWidget extends StatelessWidget {
+  // const FontTextWidget({super.key});
+
+  // @override
+  // Widget build(BuildContext context) {
+    // return const Column(
+      // crossAxisAlignment: CrossAxisAlignment.start,
+      //children: [
+        //Text(
+          //'Normal',
+          //style: TextStyle(
+            //fontSize: 20,
+          //),
+        //),
+
+        //Text(
+          //'Bold',
+          //style: TextStyle(
+            //fontSize: 20,
+            //fontWeight: FontWeight.bold,
+          //),
+        //),
+
+        //Text(
+          //'Semi Bold',
+          //style: TextStyle(
+            //fontSize: 20,
+            //fontWeight: FontWeight.w600,
+          //),
+        //),
+
+        //Text(
+          //'Italic',
+          //style: TextStyle(
+            //fontSize: 20,
+            //fontStyle: FontStyle.italic,
+          //),
+        //),
+      //],
+    //);
+  //}
+//}
+
+class SpacingTextWidget extends StatelessWidget {
+  const SpacingTextWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -98,39 +141,37 @@ class FontTextWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Normal',
+          'Normal Text',
           style: TextStyle(
             fontSize: 20,
           ),
         ),
-
+        SizedBox(height: 20),
         Text(
-          'Bold',
+          'Letter Spacing',
           style: TextStyle(
             fontSize: 20,
-            fontWeight: FontWeight.bold,
+            letterSpacing: 5,
           ),
         ),
-
+        SizedBox(height: 20),
         Text(
-          'Semi Bold',
+          'Word Spacing Example',
           style: TextStyle(
             fontSize: 20,
-            fontWeight: FontWeight.w600,
+            wordSpacing: 10,
           ),
         ),
-
+        SizedBox(height: 20),
         Text(
-          'Italic',
+          'Line 1\nLine 2\nLine 3',
           style: TextStyle(
             fontSize: 20,
-            fontStyle: FontStyle.italic,
+            height: 2,
           ),
         ),
       ],
     );
   }
 }
-
-
 
